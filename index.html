@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="metronome">
+        <div class="bpm-display">
+          <span class="tempo">150</span>
+          <span class="bpm">BPM</span>
+        </div>
+        <div class="tempo-settings">
+          <div class="adjust-tempo-btn decrease-tempo">-</div>
+          <input type="range" min="50" max="250" step="1" class="slider" />
+          <div class="adjust-tempo-btn increase-tempo">+</div>
+        </div>
+        <div class="start-stop">START</div>
+        <div class="measures">
+          <div class="subtract-beats stepper">-</div>
+          <div class="measure-count">4</div>
+          <div class="add-beats stepper">+</div>
+        </div>
+        <span class="beats-per-measure-text">beats per measure</span>
+      </div>
+    </div>
+
+    <div id="app"></div>
+    <script src="src/app.js" type="module"></script>
+  </body>
+</html>
